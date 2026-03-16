@@ -7,13 +7,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#6366f1', // Indigo
-        secondary: '#f43f5e', // Rose
+        primary: "#6366f1",
+        secondary: "#8b5cf6",
+        accent: "#ec4899",
       },
-      animation: {
-        'spin-slow': 'spin 3s linear infinite',
-        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-      }
     },
   },
   plugins: [],

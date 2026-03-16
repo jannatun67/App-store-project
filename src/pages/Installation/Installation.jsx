@@ -38,7 +38,7 @@ const Installation = () => {
   };
 
   return (
-    <div className="min-h-screen pt-24 pb-16">
+    <div className="min-h-screen pt-24 w-11/12 mx-auto pb-16">
       <div className="container-custom">
         {/* Header */}
         <div className="text-center mb-12">

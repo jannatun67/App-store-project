@@ -52,7 +52,7 @@ const AppDetails = () => {
   }
 
   return (
-    <div className="min-h-screen pt-24 pb-16">
+    <div className="min-h-screen w-11/12 mx-auto pt-24 pb-16">
       <div className="container-custom">
         {/* Back Button */}
         <button
