@@ -31,9 +31,13 @@ const Header = () => {
       <div className="container-custom  w-11/12 mx-auto">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div onClick={() => navigate('/')} className="cursor-pointer group">
-            <img src={logo} alt="logo" className='w-15' />
-          </div>
+         <div
+  onClick={() => navigate('/')}
+  className="cursor-pointer flex gap-3 items-center justify-center group"
+>
+  <img src={logo} alt="logo" className="w-10" />
+  <span className="text-xl font-bold text-[#632EE3]">HERO.IO</span>
+</div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
@@ -103,10 +107,10 @@ const Header = () => {
               href="https://github.com/jannatun67"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center space-x-2 mt-3 bg-[#800080] text-white px-6 py-3 rounded-xl font-medium"
+              className="flex items-center justify-center space-x-2 mt-3 bg-[#632EE3] text-white px-6 py-3 rounded-xl font-medium"
             >
               <FaGithub />
-              <span>Contribute</span>
+              <span>Contribute</span> 
             </a>
           </div>
         </div>

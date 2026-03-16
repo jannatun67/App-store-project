@@ -29,18 +29,15 @@ const Apps = () => {
   };
 
   return (
-    <div className="min-h-screen pt-24 pb-16">
+    <div className="min-h-screen w-11/12 mx-auto pt-24 pb-16">
       <div className="container-custom">
         {/* Title Section */}
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              Discover
-            </span>
-            <span className="text-gray-800"> Amazing Apps</span>
+            Our All Applications
           </h1>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Find the perfect apps for your needs. Browse through our collection of high-quality applications.
+           Explore All Apps on the Market developed by us. We code for Millions
           </p>
         </div>
 
