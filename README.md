@@ -1,12 +1,30 @@
-# React + Vite
+# AppStore Pro - Modern App Discovery Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📱 Description
+AppStore Pro is a cutting-edge web application for discovering, exploring, and managing mobile applications. Built with modern web technologies, it offers a seamless user experience with real-time search, detailed app analytics, and personalized installation management.
 
-Currently, two official plugins are available:
+## 🚀 Technologies
+- **React 18** - Frontend library
+- **React Router 6** - Navigation and routing
+- **Tailwind CSS** - Styling and responsive design
+- **Recharts** - Data visualization
+- **LocalStorage API** - Persistent storage
+- **Font Awesome** - Icons
+- **Vite** - Build tool and development server
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
+- 🔍 Live search functionality
+- 📊 Interactive rating charts
+- 💾 Local storage for app installations
+- 📱 Fully responsive design
+- 🎨 Modern gradient UI with primary (#6366f1) and secondary (#f43f5e) colors
+- ⚡ Loading animations
+- 🔔 Toast notifications
+- 🗂️ Sort apps by downloads
+- 🎯 Active route indication
+- 🍔 Unique animated hamburger menu
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📦 Installation
+```bash
+npm install
+npm run dev
