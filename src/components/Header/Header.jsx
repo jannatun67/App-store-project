@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FaGithub } from 'react-icons/fa';
 import { NavLink, useNavigate } from 'react-router-dom';
+import logo from "../../assets/logo.png"
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,14 +28,11 @@ const Header = () => {
         scrolled ? 'bg-white/95 backdrop-blur-md shadow-lg py-2' : 'bg-transparent py-4'
       }`}
     >
-      <div className="container-custom">
+      <div className="container-custom  w-11/12 mx-auto">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div onClick={() => navigate('/')} className="cursor-pointer group">
-            <h1 className="text-3xl font-bold">
-              <span className="text-[#800080]">App</span>
-              <span className="text-gray-800">Store</span>
-            </h1>
+            <img src={logo} alt="logo" className='w-15' />
           </div>
 
           {/* Desktop Navigation */}

@@ -1,46 +1,48 @@
 import React from 'react';
+import hero from "../../assets/hero.png"
 
 const StatsSection = () => {
   const stats = [
     {
-      icon: 'fa-download',
-      value: '10M+',
-      label: 'Downloads',
-      color: 'from-blue-500 to-cyan-500'
+      value: '29.6M',
+      label: 'Total Downloads',
+      note: '21% More Than Last Month'
     },
     {
-      icon: 'fa-star',
-      value: '4.5+',
-      label: 'Average Rating',
-      color: 'from-yellow-500 to-orange-500'
+      value: '906K',
+      label: 'Total Reviews',
+      note: '46% More Than Last Month'
     },
     {
-      icon: 'fa-users',
-      value: '5M+',
-      label: 'Active Users',
-      color: 'from-green-500 to-emerald-500'
+      value: '132+',
+      label: 'Active Apps',
+      note: '31 More Will Launch'
     }
   ];
 
   return (
-    <div className="container-custom py-16">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {stats.map((stat, index) => (
-          <div
-            key={index}
-            className="relative group cursor-pointer"
-          >
-            <div className={`absolute inset-0 bg-gradient-to-r ${stat.color} rounded-2xl opacity-20 group-hover:opacity-30 transition-opacity blur-xl`}></div>
-            <div className="relative bg-white rounded-2xl p-8 shadow-xl card-hover">
-              <div className={`w-16 h-16 bg-gradient-to-r ${stat.color} rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
-                <i className={`fas ${stat.icon} text-2xl text-white`}></i>
-              </div>
-              <h3 className="text-3xl font-bold text-gray-800 mb-2">{stat.value}</h3>
-              <p className="text-gray-600">{stat.label}</p>
-            </div>
-          </div>
-        ))}
+    <div className=''>
+      {/* Hero Image Centered */}
+      <div className="flex justify-center mb-10">
+        <img src={hero} alt="Hero" className="max-w-full h-auto" />
       </div>
+
+      <section className="bg-gradient-to-r from-purple-700 to-purple-500 text-white py-20">
+        <div className="container-custom text-center w-11/12 mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold mb-12">
+            Trusted By Millions, Built For You
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+            {stats.map((stat, index) => (
+              <div key={index} className="bg-purple-800/20 rounded-2xl p-4">
+                <p className="text-sm text-gray-300 mb-1">{stat.label}</p>
+                <h3 className="text-4xl md:text-5xl font-extrabold mb-3">{stat.value}</h3>
+                <p className="text-sm text-purple-200 mt-1">{stat.note}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
